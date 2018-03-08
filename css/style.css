@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 html, body {
   box-sizing: border-box;
@@ -10,27 +10,28 @@ html, body {
 
 /* Responsive font sizing */
 h1 {
-  font-size: 3vw;
+  font-size: 2vw;
 }
 h4 {
-  font-size: 1.5vw;
+  font-size: 1vw;
 }
 
 .container {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(7, auto);
-    grid-template-areas:
-      "h h h h h h h h h h h h"
-      "A A A B B B B B B C C C"
-      "A A A B B B B B B C C C"
-      "A A A B B B B B B C C C"
-      "D D E E F F G G H H I I"
-      "D D E E F F G G H H I I"
-      "f f f f f f f f f f f f";
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas:
+    "h h h h h h h h h h h h"
+    "A A A B B B B B B C C C"
+    "A A A B B B B B B C C C"
+    "A A A B B B B B B C C C"
+    "D D E E F F G G H H I I"
+    "D D E E F F G G H H I I"
+    "f f f f f f f f f f f f";
 }
 
 @media only screen and (max-width: 600px) {
@@ -70,7 +71,6 @@ img {
 
 .header {
   grid-area: h;
-  font-family: 'Great Vibes', cursive;
 }
 .imageA {
   grid-area: A;
@@ -101,5 +101,4 @@ img {
 }
 .footer {
   grid-area: f;
-  font-family: 'Lato', sans-serif;
 }

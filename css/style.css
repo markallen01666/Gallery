@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Lato');
+
+html, body {
+  box-sizing: border-box;
+  background-color: #000000;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Responsive font sizing */
+h1 {
+  font-size: 3vw;
+}
+h4 {
+  font-size: 1.5vw;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+      "h h h h h h h h h h h h"
+      "A A A B B B B B B C C C"
+      "A A A B B B B B B C C C"
+      "A A A B B B B B B C C C"
+      "D D E E F F G G H H I I"
+      "D D E E F F G G H H I I"
+      "f f f f f f f f f f f f";
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:
+      "h h h h h h h h h h h h"
+      "A A A A A A C C C C C C"
+      "A A A A A A C C C C C C"
+      "A A A A A A C C C C C C"
+      "H H H H B B B B I I I I"
+      "H H H H B B B B I I I I"
+      "D D D E E E F F F G G G"
+      "D D D E E E F F F G G G"
+      "f f f f f f f f f f f f";
+  }
+}
+
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #AAAAAA;
+}
+
+img {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  grid-area: h;
+  font-family: 'Great Vibes', cursive;
+}
+.imageA {
+  grid-area: A;
+}
+.imageB {
+  grid-area: B;
+}
+.imageC {
+  grid-area: C;
+}
+.imageD {
+  grid-area: D;
+}
+.imageE {
+  grid-area: E;
+}
+.imageF {
+  grid-area: F;
+}
+.imageG {
+  grid-area: G;
+}
+.imageH {
+  grid-area: H;
+}
+.imageI {
+  grid-area: I;
+}
+.footer {
+  grid-area: f;
+  font-family: 'Lato', sans-serif;
+}
